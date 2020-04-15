@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Nawill IT Solutions</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="./inc/css/style.css" rel="stylesheet">
+    <link href="./inc/css/style1.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header id="header-nav" role="banner">
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"> <img src="inc/img/logo.png" alt="logo"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services-section">Services</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://nawipedia.com/"target="_blank">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--- Image Slider -->
+    <div id="slides" class="carousel slides" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="inc/img/bgimg.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">NAWILL IT SOLUTIONS</h1>
+                    <h3>The Home of IT Solutions</h3>
+                </div>
+            </div>
+
+            <!-- <div class="carousel-item">
+                <img src="img/bgimg.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">4TH INDUSTRIAL REVOLUTION</h1>
+                    <h3>Nawill is here to make sure you are not left out</h3>
+                </div>
+            </div> -->
+            <!-- <div class="carousel-item">
+                <img src="inc/img/bgimg.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">INNOVATE! GO DIGITAL NOW!</h1>
+                    <h3>Nawill is here to Power You</h3>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+
+    <!--- Jumbotron -->
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <div>
+                    <p class="lead">
+                        Nawill  <a href="https://en.wikipedia.org/wiki/Nigeria">Nigeria</a> Limited is a Nigerian based <a href="https://en.wikipedia.org/wiki/Information_technology">IT</a>  
+                        firm with it's headquaters in <a href="https://en.wikipedia.org/wiki/Lagos_State">Lagos.</a> Our goal
+                        is to make sure <a href="https://en.wikipedia.org/wiki/Sub-Saharan_Africa">Sub-Saharan African</a>  businesses are not left out of the digital revolution.
+                        We are commited to repositioning African businesses to take full advantage of the
+                        <a href="https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/">
+                            4th Industrial Revolution</a> characterized by a fusion of technologies
+                        that are clossing the gap between the physical and the digital spheres.
+                        <span id="dots">...</span>
+                        <span id="more"> <br>
+                            <small> Our Digital Revolution Roadmap is designed to take your business from point 0 to 1.
+                                Beginning with conceptualization, branding to business strategy.
+                                At point one, your business will be strategically positioned in the digital
+                                ecosystem.<br>
+                                Nawill is here to power your digital transformation, We are into 
+                                <a href="https://www.techopedia.com/definition/628/information-technology-consultant-it-consultant">IT consulting,</a> 
+                                <a href="https://en.wikipedia.org/wiki/Web_design">web design</a>  and 
+                                <a href="https://www.techopedia.com/definition/2953/mobile-application-mobile-app">Mobile Apps</a>  Development etc.
+                                <br>
+                            </small>
+
+                        </span> </p>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="#"> <button type="button" class="btn btn-outline-secondary btn-lg" onclick="myFunction()"
+                        id="myBtn"> Read More</button> </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+    <!--SERVICES SECTION -->
+    
+    <!--- Welcome Section -->
+    <section id="services-section">
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Our Services </h1>
+
+                <hr>
+                <div class="col-12">
+                    <p class="lead">Our services include but not limited to the following.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--- Three Column Section -->
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fas fa-code"></i>
+                    <h3>IT CONSULTING</h3>
+                    <p>Consult us today. Wether you want to build a IT framework for your business or review your IT 
+                        infatructure, we are here for you.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fas fa-bold"></i>
+                    <h3>WEB DESIGN</h3>
+                    <p>We build/design all kinds of websites, weather static or dynamic,
+                        e-commerce with intergrated payment system etc</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fab fa-css3"></i>
+                    <h3>SOFTWARE DEVELOPMENT</h3>
+                    <p>Get a professional Mobile App for your business with unique features that we widen your customer
+                        base </p>
+                </div>
+            </div>
+            <br> <br>
+                 <h3>Other services include </h3> <br>
+                 <ul>
+                     <li>Hardware Purchase Advisory</li>
+                     <li>Business Advisory Service with special emphasis on IT integration</li>
+                 </ul>
+            <hr class="my-4">
+        </div>
+    </section>
+     <!--END SERVICES SECTION -->
+
+    <!--PORTFOLIO SECTION -->
+    <section id="services">
+        <div class="container">
+            <h1>Our Portfolio</h1>  <br>
+            <!--- Cards -->
+            <div class="row">
+              <!--1  -->
+              <div class="col-md-4">
+                  <a href="https://www.alexanderbernhardtlibrary.com/" target="_blank">
+                    <img src="inc/img/portfolio/abl.jfif" alt="image"></a>
+              </div>
+              <br><br><br>
+              <!--2  -->
+                <div class="col-md-4">
+                    <a href="https://ushashir.github.io/Mechanic-site/" target="_blank">
+                      <img src="inc/img/portfolio/logoipsun.jfif" alt="image"></a>
+                </div>
+              
+              <br>
+              <!--3.   -->
+                <div class="col-md-4">
+                    <a href="7.	https://ushashir.github.io/if/" target="_blank">
+                      <img src="inc/img/portfolio/ifgroup.jfif" alt="image"></a>
+                </div>
+              <br>
+              <!-- 4 -->
+                <div class="col-md-4">
+                    <a href="4.	https://ushashir.github.io/nawill_cctm/" target="_blank">
+                      <img src="inc/img/portfolio/cctm.jfif" alt="image"></a>
+                </div>
+                 <br>
+                 <!--5. -->
+                <div class="col-md-4">
+                    <a href="5.	https://nawipedia.com/" target="_blank">
+                      <img src="inc/img/portfolio/nawipedia.jfif" alt="image"></a>
+                </div> <br>
+                <!--6.  -->
+                <div class="col-md-4">
+                    <a href="https://ushashir.github.io/nawill_orji/" target="_blank">
+                      <img src="inc/img/portfolio/orjisunday.jfif" alt="image"></a>
+                </div>
+            </div>       
+        </div>
+      </section>
+    <!-- End of services section -->
+    
+    <!--END PORTFOLIO SECTION -->
+
+        <hr style="border-top: 2px solid #b4b4b4; width: 95%; margin-top: .3rem; margin-bottom: 1rem; ">
+
+        <!--CONTACT SECTION -->
+        <section id="contact-section">
+            <div class="container-fluid padding">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 "
+                        data-scrollreveal="enter top and move 100px, wait 0.5s">
+                        <div class="text-center">
+                            <h1><i class="fa fa-tint small-icons bk-color-black"></i>Contact us Now</h1>
+                            <p class="lead">
+                                8, Morris Street. Yaba. Lagos - Nigeria.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid padding">
+                        <div class="row padding">
+                            <div class="col-md-12 col-lg-6">
+                                <h3><i class="fa fa-comments small-icons bk-color-red"></i>Message Us Here</h3>
+                                <hr />
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" required="required"
+                                                    placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" required="required"
+                                                    placeholder="Email address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <textarea name="message" id="message" required="required"
+                                                    class="form-control" rows="4" placeholder="Message"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary btn-lg">Submit
+                                                    Query</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3><i class="fa fa-comments small-icons bk-color-red"></i>Reach Us Here
+                                </h3>
+                                <hr />
+                                8, Morris Street. Yaba. Lagos - Nigeria.<br />
+                                <p><strong> <a href="Tel:+234 813 857 2304">Tel: +234 901 851 5257 </a>
+                                    </strong>
+                                </p> <br />
+                                Email: nawillitsolutions@gmail.com <br />
+                                <h4>Social Media Preference</h4>
+                                <div class="col-12 social padding">
+                                    <a href="https://web.facebook.com/ushashir" target="_blank"> <i
+                                            class="fab fa-facebook"></i> </a>
+                                    <a href="https://twitter.com/usha_shir" target="_blank"> <i
+                                            class="fab fa-twitter"></i>
+                                    </a>
+                                    <!-- <a href="#"> <i class="fab fa-google-plus-g"></i> </a> -->
+                                    <a href="https://www.instagram.com/ushahembashir/?hl=en"> <i class="fab fa-instagram"></i> </a>
+                                    <!-- <a href="#"> <i class="fab fa-youtube"></i> </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./ Content div-->
+                </div>
+            </div>
+        </section>
+        <!--END CONTACT SECTION -->
+
+
+        <!--- Footer -->
+        <footer>
+            <div class="col-12 text-center">
+                <div class="row">
+                    <div class="col">
+                        <img src="inc/img/f-phone.png" alt="i">
+                        <a href="Tel:+234 813 857 2304">+234 901 851 5257 </a>
+                    </div>
+                    <div class="col">
+                        <img src="inc/img/f-mail.png" alt="i">nawillitsolutions@gmail.com
+                    </div>
+                </div>
+                <hr class="light">
+                <h5> All rights reserved. | Nawill IT Solutions. &copy; 2020. </h5>
+            </div>
+
+        </footer>
+
+        <script src="inc/js/custom.js"></script>
+
+</body>
+
+</html>
+
+
